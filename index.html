@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SHITAKHA OBOO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body style="margin-left: 20px;">
+  <header style="padding-bottom: 60px">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="">SHITAKHA OBOO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="myjournal.html">JOURNAL</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+<div class="row">
+  <div class="col-md-4" >
+    <img src="DSC_0633~2e.jpg"class="img-fluid" style="max-width: 300px;max-height:300px; border-radius: 50%"  alt="Responsive image">
+    <h3 style="border-bottom: #000 solid 1px; ">STUDENT ENGINEER  |  INNOVATOR</h3>
+    <div class="card2">
+        <p>Shitakha oboo is a student Engineer at the Jomo Kenyatta
+            University of Agriculture and Technology. He is passionate about
+            technology and the myriad of possible solutions that can be realized.
+            He is eager to attain relevant skills that he believes are key in his 
+            career development and for impactful innovativeness.
+          </p>
+    </div>
+  </div>
+  <div class="col-md-5" style="display: grid;grid-gap: 1px;">
+        <div class="slider"style="grid-row: 1/4;">
+          <a href="projects.html"><img class="mySlides" src="Canva - Black Metal Tools Hanged on a Rack Near Table.jpg" style="width:100%"></a>
+          <a href="projects.html"><img class="mySlides" src="Mekatilili-Fellowship.png" style="width:100%"></a>
+          <a href="myjournal.html"><img class="mySlides" src="IMAG0337.jpg" style="width:100%"></a>
+        </div>
+        <div >
+          <blockquote>
+            If I have seen<br/>further than others,<br/> it is by standing <br/>upon the shoulders of giants.
+            <span class="author"><i>Isaac Newton</i></span>
+          </blockquote>
+
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 6000); // Change image every 3 seconds
+            }
+            </script>
+  </div>
+  <div class="col-sm-3" style="display: grid;grid-gap: 1px; background: #fff; border-radius: 10px; border: #000 solid 2px;justify-content: center;max-width: 400px;" >
+    <h4 style="grid-row: 1/2; border-bottom: #000 solid 1px;">skill set</h4>
+    <div class="miner1" style="grid-row: 2/5">
+        
+        <figure>
+                <img src="code.png" class="img-fluid"   alt="Responsive image" >
+                <figcaption>PROGRAMMING</figcaption>
+              </figure>
+              
+      
+            <div class="list">
+                    <p style="text-decoration-style: solid; ">PROGRAMMING</p>
+          <ul style="list-style-type: none;padding: 0;">
+              <li>Embedded systems design</li>
+              <li>Electronic CAD design<br/>
+                (Proteus, Fritzing, Multisim, Xilinx Vivado, Active HDL)</li>
+              <li>VHDL proficient</li>
+              <li>Rapid prototyping</li>
+            </ul>
+      </div>
+    </div>
+    <div class="miner2" style="grid-row: 5/8">
+        <figure>
+                <img src="chip.png" class="img-fluid" style="width:100%;width:100%;border-top:#000 solid 1px;"  alt="Responsive image" >
+                <figcaption>ELECTRONICS</figcaption>
+              </figure>
+              
+      
+      <div class="list">
+        <p style="text-decoration-style: solid; ">ELECTRONICS</p>
+          <ul style="list-style-type: none;padding: 0;">
+              <li>Python programming(django framework)</li>
+              <li>C/C++ programming</li>
+              <li>Arduino programming</li>
+              <li>ML programming(AVR)</li>
+              <li>Web UI/UX design</li>
+      
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="footer1 navbar-fixed-bottom"> 
+        <ul>
+          <li>
+            <a href="https://twitter.com/shitakha_oboo?ref_src=twsrc%5Etfw" ><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fa fa-twitter" aria-hidden="true"></span>
+             </a>
+          </li>
+          <li>
+              <a href="mailto:osbornoboo@gmail.com">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-envelope" aria-hidden="true"></span>
+               </a>
+            </li>
+            <li>
+                <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-github" aria-hidden="true"></span>
+                 </a>
+              </li>
+              <li>
+                  <a href="https://www.linkedin.com/in/osborn-shitakha?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuP%2BeoYXGTsSu9HSi2yrKDg%3D%3D"#>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="fa fa-linkedin" aria-hidden="true"></span>
+                   </a>
+                </li>
+        </ul>
+  </div>
+
+</body>
+</html>
