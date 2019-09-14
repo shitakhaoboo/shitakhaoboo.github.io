@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SHITAKHA OBOO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+        <style type='text/css'>
+            .myimage
+                { 
+                    max-width: 200px;;
+                    opacity: 0.7;
+
+                }
+                .myimage:hover
+                {
+                    opacity: 1;
+                }
+                .page a
+                {
+                    margin: 5px;
+                    padding: 5px;
+                }
+        </style>
+        <script>
+            // show the given page, hide the rest
+            var ele;
+            function show(elementID)
+             {
+                // try to find the requested page and alert if it's not found
+                ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+            
+        </script>
+    </head>
+    <body>
+        <header>
+                <a href="index.html" class="btn btn-primary btn-md-active align-bottom" role="button" aria-pressed="true" style=" background-color:#777; " >BACK HOME</a>
+        </header>
+        <div class="row" style="grid-gap: 1px;" >
+                        
+    <div class="col-sm-10" style="box-shadow:0px 0 50px rgba(0,0,0,.4);border-radius: 10px; ">
+            <div id="mekatilili" class="page" >
+                <p>
+                       makatilili The experience within the period of the fellowship, has been phenomenal just to say the least. I received important insight in the areas of Machine learning and Artificial intelligence, which is beyond the expanded meanings as per the initials(AI and ML). This has stirred up an interest within these areas, that I would currently desire to customise and integrate them  for technological solutions I shall be a part of moving forward.
+                                    </p>
+                        
+                        
+                        <p>
+                        It has also been a fulfilling experience working with new hardware components during the prototyping sessions, very well complementing my passion for Hardware programming and embedded systems engineering. It's been an exciting opportunity to work with other talented individuals in coming up with relevant solutions to specific problems we identified.
+                        </p>
+                        <br>
+                        <a  class="btn btn-primary btn-md-active align-bottom" role="button" aria-pressed="true" style=" background-color:#777;  " onclick="show('kamukunji');" >PREVIOUS</a>
+                        <a  class="btn btn-primary btn-md-active align-bottom" role="button" aria-pressed="true" style=" background-color:#777; " onclick="show('clock');">NEXT</a>
+                    </div>
+        <div id="kamukunji" class="page" style="display:none">
+                <p>
+                        kamukunji The experience within the period of the fellowship, has been phenomenal just to say the least. I received important insight in the areas of Machine learning and Artificial intelligence, which is beyond the expanded meanings as per the initials(AI and ML). This has stirred up an interest within these areas, that I would currently desire to customise and integrate them  for technological solutions I shall be a part of moving forward.
+                                     </p>
+                         
+                         
+                         <p>
+                        lamukunji It has also been a fulfilling experience working with new hardware components during the prototyping sessions, very well complementing my passion for Hardware programming and embedded systems engineering. It's been an exciting opportunity to work with other talented individuals in coming up with relevant solutions to specific problems we identifie
+                        <button  onclick="show('clock');" >PREVIOUS</button>
+                        <br>
+                        <a class="btn btn-primary btn-md-active align-bottom" role="button" aria-pressed="true" style=" background-color:#777; " onclick="show('clock');">PREVIOUS</a>
+                        <a  class="btn btn-primary btn-md-active align-bottom" role="button" aria-pressed="true" style=" background-color:#777; " onclick="show('mekatilili');">NEXT</a>
+        </div>
+        <div id="clock" class="page" style="display:none">
+                <p>clock The experience within the period of the fellowship, has been phenomenal just to say the least. I received important insight in the areas of Machine learning and Artificial intelligence, which is beyond the expanded meanings as per the initials(AI and ML). This has stirred up an interest within these areas, that I would currently desire to customise and integrate them  for technological solutions I shall be a part of moving forward.
+                                     </p>
+                         
+                         
+                         <p>
+                        lamukunji It has also been a fulfilling experience working with new hardware components during the prototyping sessions, very well complementing my passion for Hardware programming and embedded systems engineering. It's been an exciting opportunity to work with other talented individuals in coming up with relevant solutions to specific problems we identifie
+                        </p>
+                        <br>
+                        <a  class="btn btn-primary btn-md-active align-bottom" role="button" aria-pressed="true" style=" background-color:#777; " onclick="show('mekatilili');" >PREVIOUS</a>
+                        <a  class="btn btn-primary btn-md-active align-bottom" role="button" aria-pressed="true" style=" background-color:#777; " onclick="show('kamukunji');">NEXT</a>
+        </div>
+        </div>
+        <div class="col-sm-2">
+            <ul style="list-style-type: none; display:flex; flex-flow:row wrap;" >
+              <li>
+                <img src="Mekatilili-Fellowship.png" onclick="show('mekatilili');" id="mekatilili1" class="myimage img-fluid" alt="Responsive image">
+                <h5>MEKATILILI FELLOWSHIP</h5>
+              </li>
+              <li>
+                <img src="Canva - Apple Watch at 10_52.jpg" onclick="show('clock');"class="myimage img-fluid" id="clock1" alt="Responsive image">
+                <h5>DIGITAL CLOCK</h5>
+              </li>
+              <li>
+                <img src="Canva - Black Metal Tools Hanged on a Rack Near Table.jpg" onclick="show('kamukunji');" id="kamukunji1" class="myimage img-fluid"  alt="Responsive image">
+                <h5>KAMUKUNJI HCD EXCERCISE</h5>
+              </li> 
+            </ul>
+            </div>
+        </div>
+    </body>
+</html

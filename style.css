@@ -13,6 +13,7 @@ body{
     background: #f2f2f2;
     font-family: 'quicksand',sans-serif;
     max-width: 1200px;
+    padding-left: 10px;
 
 
 }
@@ -30,7 +31,6 @@ body{
     position: relative;
     margin:20px 0;
     max-width: 500px;
-    //max-height: 400px;
     background: #FFF;
     transform-style: preserve-3d;
     transform: perspective(2000px);
@@ -310,7 +310,7 @@ blockquote {
     text-align: center;
     box-sizing: border-box;
     max-width: 250px;
-    justify-content: center;"
+    justify-content: center;
     position: absolute;
     background: #eee;
     font-family: 'Bitter', serif;
@@ -322,12 +322,13 @@ blockquote {
                 3px 3px 1px #999;
     transition-duration: .3s;
     
-    span.author {
+    span  {
       position: relative;
       display: block;
       text-align: right;
       margin-top: 5px;
       color: #999;
+    }
       
       i {
         position: relative;
