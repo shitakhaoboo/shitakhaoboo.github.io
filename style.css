@@ -19,7 +19,7 @@ body{
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -352,4 +352,27 @@ transform: rotateY(-135deg);
     padding: 5px 10px;
   background-color: #EEEEEE;
   border: 1px solid #DDDDDD;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin-top:50px;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+  border-radius: 10px;
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
 }
