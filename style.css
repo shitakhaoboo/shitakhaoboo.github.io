@@ -279,15 +279,15 @@ transform: rotateY(-135deg);
 
 }
 
-.card2
+.card21
 {
-    position: relative;
+    justify-content: center;
     margin:20px 0;
-    max-width: 600px;
+    max-width: 900px;
     background: #FFF;
     border-radius: 10px;
     font-size: 17px !important;
-    box-shadow:300px 0 50px rgba(0,0,0,.2);
+    box-shadow:30px 0 50px rgba(0,0,0,.5);
 
 }
 
